@@ -1,5 +1,6 @@
 package chapter2
 
+/* Exercise 2.1 */
 object FiboModule {
 
   def fibo(n: Int): Int = {
@@ -10,13 +11,5 @@ object FiboModule {
     }
     go(n, 0, 1)
   }
-
-  // def fiboTest(m: Map): List = {
-  //   // key: input, value: expected output
-
-  // }
-
-  def main(args: Array[String]): Unit =
-    println(fibo(6))
 
 }

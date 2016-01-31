@@ -3,6 +3,7 @@ package chapter2
 import collection.mutable.Stack
 import org.scalatest._
 
+/* Exercise 2.1 */
 class FiboModuleSpec extends FlatSpec with Matchers {
 
   "Fibo" should "return the nth Fibonacci number" in {
