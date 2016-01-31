@@ -18,11 +18,11 @@
     <pathelement location="${gen}/unit" />
   </path>
 
-  <target name="help">
+  <target name="help" description="Displays some help messaging">
     <echo message="run 'ant -projecthelp' to see a list of valid targets" />
   </target>
 
-  <target name="init">
+  <target name="init" description="Initializes the build environment">
     <mkdir dir="${gen}" />
     <mkdir dir="${gen}/classes" />
     <mkdir dir="${gen}/unit" />
@@ -42,7 +42,7 @@
     <scalac srcdir="${src-unit}" destdir="${gen}/unit" classpathref="cp" />
   </target>
 
-  <target name="test" depends="compile">
+  <target name="test" depends="compile" description="Runs the tests">
     <taskdef name="scalatest" classname="org.scalatest.tools.ScalaTestAntTask" classpathref="cp" />
     <scalatest>
       <runpath>
