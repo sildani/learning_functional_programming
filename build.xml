@@ -5,14 +5,15 @@
   </description>
 
   <property environment="env" />
+
   <property name="src" location="src" />
   <property name="src-unit" location="test/unit" />
   <property name="gen" location="gen" />
-  <property name="lib" location="lib" />
+  <property name="project-lib" location="lib" />
   <property name="scala-lib" value="${env.SCALA_HOME}/lib" />
 
   <path id="cp">
-    <fileset dir="${lib}/" />
+    <fileset dir="${project-lib}/" />
     <fileset dir="${scala-lib}/" />
     <pathelement location="${gen}/classes" />
     <pathelement location="${gen}/unit" />
