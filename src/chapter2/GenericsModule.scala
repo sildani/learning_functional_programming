@@ -1,6 +1,6 @@
 package chapter2
 
-/* Exercise 2.1 */
+/* Exercise 2.2 */
 object GenericsModule {
 
   def isSorted[A](as: Array[A], ordered: (A,A) => Boolean): Boolean = {
